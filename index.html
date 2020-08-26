@@ -1,65 +1,70 @@
-open <!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <title>My first HTML website</title>
     <meta charset="UTF-8">
     <meta name="desctiption" content="My first HTML website">
     <meta name="viewport" comtent="width=device-width, initial scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
 </head>
-<style>
-    h1 {text-align: center;}
-   
-    ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 200px;
-    background-color: #f1f1f1;
-    }
-  </style>
-<body>
-    <header>
-        <h1>Hi! I'm Irina</h1>
-    </header>
-    <p>Web Developer based in <em> Melbourne, Australia.</em></p>
-    <img src="File_001.png" alt="portrait picture" width="300" height="300"/>
-    
-    <nav>
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#work">Work Experience</a></li>
-            <li><a href="#hobbies">Hobbies</a></li>
-            <li><a href="#contacts">Contacts</a></li>   
-        </ul>
-    </nav>
 
-  <section id="about">
-          <article><h2>About me</h2>
-          <p>Welcome to my mini portfolio website.
-          I have a passion in design, art and illustration.
-          I love creating websites for great businesses.</p>
-          </article>
-        </section>
-  <section id="work">
-          <article><h2>Work Experience</h2>
-        <p>I have been working in bookkeeping and accounting industry prior to Web Development.</p></article>
-    </section>
-    <section id="hobbies">
-          <article>
-              <h2>Hobbies</h2>
-              <p>I am a keen runner and a fitness junkie.</p> 
-        </article> 
-    </section>
-    <section id="contacts">
-          <h2>Contacts</h2>
-              <ul>
-                  <li><span>🖥️</span><a href="https://github.com/vasiliygenadiy">Github</a></li>
-                  <li><span>🕊️</span><a href="https://twitter.com/stepanktank">Twitter</a></li>
-                  <li><span>🔗</span><a href="https://www.linkedin.com/in/irina-kose-482745199">LinkedIn</a></li>
-                  <li><span>📧</span><a href="mailto:irina.kose@gmail.com">Email</a></li>
-              </ul>
-    </section>
-  </body>
-    <footer>Irina Kose, 2020</footer>
+
+<body>
+
+    <div id="nav">
+        <nav>
+            <a href="#about">About Me</a>
+            <a href="#work">Work Experience</a>
+            <a href="#hobbies">Hobbies</a>
+            <a href="#feedback">Leave your feedback</a>
+            <a href="#contacts">Contacts</a>
+        </nav>
+    </div>
+    
+    <div class="header"> 
+        <header>
+            <h1>Hi, I am Irina</h1>
+        </header>
+        <p>Junior Web developer based in <em>Melbourne, Australia</em></p>
+        <p></p>
+    </div>
+
+    <div id="photo">
+       <figure class="photo"><img src="File_001.png" alt="portrait picture" width="500" height="500"/></figure>
+    </div>  
+
+<main id="main">
+   <section id="description">
+       <h3 id="about">About me</h3><p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. ... A practice not without controversy, laying out pages with meaningless filler text can be very useful when the focus is meant to be on design, not content.</p>
+       <h3 id="work">Work experience</h3><p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. ... A practice not without controversy, laying out pages with meaningless filler text can be very useful when the focus is meant to be on design, not content.</p>
+       <h3 id="hobbies">Hobbies</h3><p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. ... A practice not without controversy, laying out pages with meaningless filler text can be very useful when the focus is meant to be on design, not content.</p>
+  </section>
+</main>
+
+    <div id="feedback">
+        <h2>Share your thoughts</h2>
+        <form action="/action_page.php">
+            <input type="text" name="fullname" placeholder="Full name"></input>
+            <br>
+            <input type="text" name="email" placeholder="Email"></input><br>
+            <textarea name="msg" placeholder="Write your message here"></textarea>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+ </body>
+    <div id="contacts">
+          <h2>Get in touch</h2>
+            <span><a href="https://github.com/vasiliygenadiy"><img alt="gh-icon" src="Octocat.jpg" width="30" height="30"></span></a>
+            <span><a href="https://twitter.com/stepanktank"><img src="Twitter.png" width="30" height="30" alt="twitter-logo"></span></a>
+            <span><a href="https://www.linkedin.com/in/irina-kose-482745199"><img src="LI-In-Bug.png" width="35" height="30"></span></a>
+            <span><a href="mailto:irina.kose@gmail.com"><img src="gmail logo.png" width="30" height="30"></span></a>
+    </div>
+
+    <br>
+    <br>
+ 
+    <footer class="white">Irina Kose, 2020</footer>
 </html>
